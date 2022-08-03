@@ -10,7 +10,116 @@
 </head>
 
 <body>
-    Scss template
+    <h1 class="visually-hidden">Findtrend - website</h1>
+    <header class="head">
+        <div class="header container">
+            <a class="header__logo" href="#">
+                <img class="header__logo__img" src="./img/logo.png" alt="Logotip image">
+                <img class="header__logo__img--mobile" src="./img/logo-mobile.png" alt="">
+            </a>
+
+            <ul class=" header__menu menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">How it work</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Pricing</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Solution</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Features</a>
+                </li>
+            </ul>
+
+            <div class="header__auth auth-btns">
+                <button class="auth-btns__login btn">Login</button>
+                <button class="auth-btns__register btn btn--light">Register</button>
+            </div>
+            <div class="header__toggle">
+            </div>
+            <div class="header__mobile">
+                <ul class=" header__menu menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">How it work</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Pricing</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Solution</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Features</a>
+                    </li>
+                </ul>
+
+                <div class="header__auth auth-btns">
+                    <button class="auth-btns__login btn">Login</button>
+                    <button class="auth-btns__register btn btn--light">Register</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero container">
+            <h2 class="hero__title">Minimize your tabs.<br> Find the trends!</h2>
+
+            <p class="hero__description">Don’t let your computer memories consumes all of those browser tabs.<br>
+                Findtrend let you gathers all of your favorite website into one place.</p>
+            <button class="hero__get-started btn btn--info">Get Started 🔥</button>
+
+            <div class="social">
+                <button class="social__twitter">
+                    <img src="./img/tiwitter.png" alt="">
+                </button>
+
+                <button class="social__pinterest">
+                    <img src="./img/pinterest.png" alt="">
+                </button>
+
+                <button class="social__facebook">
+                    <img src="./img/facebook.png" alt="">
+                </button>
+
+                <button class="social__reddit">
+                    <img src="./img/reddit.png" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="opentabs container">
+            <h3 class="opentabs__title">Open new tabs is sh*t</h3>
+            <div class="opentabs__box">
+                <img src="./img/elon-musk.png" alt="">
+            </div>
+
+            <p class="opentabs__description">
+                A solution for your browser tabs and don’t make your device get slower over time. Get <br> ease and
+                faster to
+                discover a
+                trend with just one tab.
+            </p>
+        </section>
+        <!--  -->
+    </main>
+
+    <footer>
+        <!--  -->
+    </footer>
 </body>
+<script>
+    var toggle = document.querySelector(".header__toggle")
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle("header__toggle--active")
+    })
+</script>
 
 </html>

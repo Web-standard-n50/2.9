@@ -1,0 +1,106 @@
+.hero{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    &__get-started{
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 32px;
+        margin-top:20px ;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            left: 100%;
+            bottom: 0;
+            content: "";
+            width: 99px;
+            height: 69px;
+            background: url("../../img/get-started-img.png") no-repeat;
+        }
+    }
+
+    &__title{
+        font-size: 72px;
+        line-height: 112%;
+        /* identical to box height, or 81px */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    &__description{
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #8B8B8B;
+        margin: 20px 0;
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        & > button{
+            background-color: transparent;
+            border: none;
+        }
+        &__twitter{
+            position: relative;
+            z-index: 4;
+            margin-top: -100px;
+            background-color: transparent;
+        }
+        &__pinterest{
+            position: relative;
+            z-index: 3;
+            margin-left: -100px;
+        }
+        &__facebook{
+            z-index: 2;
+            margin-top: -120px;
+            margin-left: -100px;
+        }
+        &__reddit{
+            position: relative;
+            z-index: 1;
+            margin-left: -100px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hero{
+        &__title{
+            font-size: 36px;
+            line-height: 112%;
+
+        }
+        &__description{
+            font-size: 14px;
+            line-height: 150%;
+        }
+
+        &__get-started{
+            &::after{
+                display: none;
+            }
+        }
+
+        .social{
+            display: flex;
+            flex-direction: column;
+
+            & > button{
+                margin: 0;
+                margin-top: -40px;
+            }
+
+           
+        }
+    }
+
+
+}

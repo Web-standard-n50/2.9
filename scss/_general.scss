@@ -2,10 +2,53 @@
     box-sizing: border-box;
 }
 body{
+    font-family: "Effra", sans-serif;
     font-size: 19px;
     padding: 0;
 }
 
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .container{
-    // 
+    max-width: 1440px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+
+
+.btn{
+    border-radius: 40px;
+    padding: 12px;
+    min-width: 100px;
+    background-color: transparent;
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+
+    &--light{
+        background-color: white;
+        color: black;
+    }
+
+    &--info{
+        background: #A8FF35;
+        color: black;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .container{
+        padding: 0 18px;
+    }
 }
